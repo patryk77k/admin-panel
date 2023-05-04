@@ -9,13 +9,12 @@ import "./app.css";
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Topbar />} />
-      </Routes>
+      <Topbar />
       <div className="container">
         <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UserList />} />
         </Routes>
       </div>
     </div>
