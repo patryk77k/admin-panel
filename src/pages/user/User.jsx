@@ -1,5 +1,6 @@
 import "./user.css";
 import React from "react";
+import { Link } from "react-router-dom";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
@@ -11,8 +12,10 @@ const User = () => {
   return (
     <div className="user">
       <div className="userTitleContainer">
-        <div className="userTitle">Edit User</div>
-        <h3 className="userAddButton">Create</h3>
+        <h1 className="userTitle">Edit User</h1>
+        <Link to="/newUser">
+          <button className="userAddButton">Create</button>
+        </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">
@@ -105,10 +108,11 @@ const User = () => {
                   alt=""
                 />
                 <label htmlFor="file">
-                  <PublishIcon />
+                  <PublishIcon className="userUpdateIcon" />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
+              <button className="userUpdateButton">Update</button>
             </div>
           </form>
         </div>
