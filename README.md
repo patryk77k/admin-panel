@@ -9,9 +9,9 @@
 ## 💻 Used Stuff:  
 - React
 - Java Script
-- Firebase Auth
-- Firebase Firestore
-- Firebase Storage
+- mui
+- Rechards
+  
 
  <i> More Info in package.json</i>
 
